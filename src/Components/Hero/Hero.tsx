@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Laptop, planet } from "../../Assets";
 import { TypedEffect } from "../../Utils";
-export type HeroProps = {};
+// export type HeroProps = {};
 
-const Hero = ({}: HeroProps): JSX.Element => {
+const Hero = (): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -63,6 +63,20 @@ const Hero = ({}: HeroProps): JSX.Element => {
             </p>
             <p className="mt-0.5 sm:block">
               {"// Writing clean, scalable code 🖥️"}
+            </p>
+            <p className="mt-2 break-all">
+              <span className="text-[#9160A6]">const </span>{" "}
+              <span className="text-[#66BCF2]">resume </span>
+              <span className="text-[#66BCF2]"> = </span>
+              <a
+                className="text-[#9CBF78]"
+                href="https://www.linkedin.com/in/luisledzma/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                `https://www.linkedin.com/in/luisledzma/`
+              </a>
+              <span>;</span>
             </p>
           </div>
         </div>

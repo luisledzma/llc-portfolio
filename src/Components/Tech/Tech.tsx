@@ -7,9 +7,9 @@ import {
 import { SectionWrapper, textVariant } from "../../Utils";
 import SkillsRow from "./SkillsRow/SkillsRow";
 
-export type TechProps = {};
+// export type TechProps = {};
 
-const Tech = ({}: TechProps): JSX.Element => {
+const Tech = (): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -50,7 +50,7 @@ const Tech = ({}: TechProps): JSX.Element => {
       </motion.div>
       <section
         id="skills"
-        className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden"
+        className="flex flex-col items-center justify-center gap-3 h-full relative overflow-visible"
         style={{
           transform: "scale(0.9",
         }}

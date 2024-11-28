@@ -3,9 +3,9 @@ import { services } from "../../Constants";
 import { fadeIn, SectionWrapper, textVariant } from "../../Utils";
 import ServiceCard from "./ServiceCard/ServiceCard";
 
-export type AboutProps = {};
+// export type AboutProps = {};
 
-const About = ({}: AboutProps): JSX.Element => {
+const About = (): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

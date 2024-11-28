@@ -5,8 +5,8 @@ import { useRef, useState } from "react";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.5 })
+  const [sphere] = useState(
+    () => random.inSphere(new Float32Array(1000 * 3), { radius: 1.5 }) // 5000 points, 3 coordinates (x, y, z) per point
   );
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;

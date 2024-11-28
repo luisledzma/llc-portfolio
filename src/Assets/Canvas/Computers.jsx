@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
+/* eslint-disable-next-line no-sequences */
 import { useSpring } from "@react-spring/core";
 import { a as three } from "@react-spring/three";
 import {
@@ -54,7 +55,10 @@ const Computers = ({ open, hinge, ...props }) => {
     <group
       ref={group}
       {...props}
-      onPointerOver={(e) => (e.stopPropagation(), setHovered(true))}
+      onPointerOver={(e) => {
+        e.stopPropagation();
+        setHovered(true);
+      }}
       onPointerOut={(e) => setHovered(false)}
       dispose={null}
     >
@@ -145,7 +149,10 @@ const ComputerCanvas = () => {
       <Suspense fallback={<Loader />}>
         <group
           rotation={[0, Math.PI, 0]}
-          onClick={(e) => (e.stopPropagation(), setOpen(!open))}
+          onClick={(e) => {
+            e.stopPropagation();
+            setOpen(!open);
+          }}
         >
           <Computers open={open} hinge={props.open.to([0, 1], [1.575, -0.4])} />
         </group>

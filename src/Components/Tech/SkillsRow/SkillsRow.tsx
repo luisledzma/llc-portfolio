@@ -69,8 +69,6 @@ const SkillsRow = ({
         style={{
           position: "relative",
           display: "inline-block",
-          //boxShadow: "0px 200px 100px 15px #211e35", // Add shadow here
-          //borderRadius: "100px",
         }}
       >
         <img src={src} width={width} height={height} alt="skill" />

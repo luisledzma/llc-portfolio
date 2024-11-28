@@ -1,6 +1,8 @@
-export type FooterProps = {};
+import { SectionWrapper } from "../../Utils";
 
-const Footer = ({}: FooterProps): JSX.Element => {
+// export type FooterProps = {};
+
+const Footer = (): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +23,19 @@ const Footer = ({}: FooterProps): JSX.Element => {
   // Component's render method
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  return <div>Footer</div>;
+  return (
+    <footer className="rounded-lg shadow m-4 ">
+      <div className="w-full mx-auto max-w-screen-xl md:flex md:items-center md:justify-center">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-white">
+          © 2024{" "}
+          <a href="https://flowbite.com/" className="hover:underline">
+            LLCode™
+          </a>
+          . All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+  );
 };
 
-export default Footer;
+export default SectionWrapper(Footer, "footer");

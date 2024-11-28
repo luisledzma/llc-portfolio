@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { SectionWrapper, textVariant } from "../../Utils";
 
-export type ContactProps = {};
+// export type ContactProps = {};
 
-const Contact = ({}: ContactProps): JSX.Element => {
+const Contact = (): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,6 +42,7 @@ const Contact = ({}: ContactProps): JSX.Element => {
             className="text-[#9CBF78]"
             href="https://github.com/luisledzma"
             target="_blank"
+            rel="noreferrer"
           >
             `https://github.com/luisledzma`
           </a>
@@ -55,6 +56,7 @@ const Contact = ({}: ContactProps): JSX.Element => {
             className="text-[#9CBF78]"
             href="https://www.linkedin.com/in/luisledzma/"
             target="_blank"
+            rel="noreferrer"
           >
             `https://www.linkedin.com/in/luisledzma/`
           </a>

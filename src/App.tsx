@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Stars } from "./Assets";
+import { GlobalContext } from "./Common/GlobalContext";
 import {
   About,
   Contact,
@@ -9,19 +10,33 @@ import {
   Navbar,
   Tech,
 } from "./Components";
+import { GlobalContextModel } from "./Models/GlobalContextModel";
 const App = (): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  const [globalContext, setGlobalContext] = useState<GlobalContextModel>({
+    setLaptopState(open) {
+      setLaptopState(open);
+    },
+  });
+  const [openLaptop, setOpenLaptop] = useState<boolean>(true);
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useEffect
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  useEffect(() => {
+    const clone = JSON.parse(
+      JSON.stringify(globalContext)
+    ) as GlobalContextModel;
+    clone.setLaptopState = setOpenLaptop;
+    setGlobalContext(clone);
+  }, [globalContext]);
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Misc Methods
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  const setLaptopState = (open: boolean): void => {
+    setOpenLaptop(open);
+  };
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Callback methods
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -33,23 +48,19 @@ const App = (): JSX.Element => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-background-dark1">
-        <Navbar></Navbar>
-        <Hero></Hero>
-        <About></About>
-        <Experience></Experience>
-
-        <div className="bg-tech-pattern bg-cover bg-no-repeat bg-center z-10">
-          <Tech></Tech>
-        </div>
-        {/* <Works></Works>
-          <Feedbacks></Feedbacks> */}
-        <div className="relative z-0">
-          <Contact></Contact>
-          <Footer></Footer>
-          {/* <StarsCanvas></StarsCanvas> */}
-        </div>
-
-        {/* <Stars></Stars> */}
+        <GlobalContext.Provider value={globalContext}>
+          <Navbar></Navbar>
+          <Hero isLaptopOpen={openLaptop}></Hero>
+          <About></About>
+          <Experience></Experience>
+          <div className="bg-tech-pattern bg-cover bg-no-repeat bg-center z-10">
+            <Tech></Tech>
+          </div>
+          <div className="relative z-0">
+            <Contact></Contact>
+            <Footer></Footer>
+          </div>
+        </GlobalContext.Provider>
       </div>
     </BrowserRouter>
   );

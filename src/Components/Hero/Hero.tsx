@@ -2,9 +2,11 @@ import { motion } from "framer-motion";
 import { Laptop } from "../../Assets";
 import { TypedEffect } from "../../Utils";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
-// export type HeroProps = {};
+export type HeroProps = {
+  isLaptopOpen: boolean;
+};
 
-const Hero = (): JSX.Element => {
+const Hero = ({ isLaptopOpen }: HeroProps): JSX.Element => {
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // useState, useRef, useContext, etc.
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,11 +67,14 @@ const Hero = (): JSX.Element => {
             <p className="mt-0.5 sm:block">
               {"// Writing clean, scalable code 🖥️"}
             </p>
-            <CodeSnippet
-              text="resume"
-              link="google"
-              isEmail={false}
-            ></CodeSnippet>
+            <div className={isLaptopOpen ? "" : "z-10"}>
+              <CodeSnippet
+                text="resume"
+                link="https://luisledzma.github.io/resume/LuisLedezmaResume.pdf"
+                isEmail={false}
+              ></CodeSnippet>
+            </div>
+
             {/* <p className="mt-2 break-all">
               <span className="text-[#9160A6]">const </span>{" "}
               <span className="text-[#66BCF2]">resume </span>

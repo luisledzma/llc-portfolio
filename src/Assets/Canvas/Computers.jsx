@@ -11,8 +11,9 @@ import {
   useGLTF,
 } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { Suspense, useContext, useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+import { GlobalContext } from "../../Common/GlobalContext";
 import { Loader } from "../../Utils";
 
 const Computers = ({ open, hinge, ...props }) => {
@@ -105,6 +106,7 @@ const Computers = ({ open, hinge, ...props }) => {
 const ComputerCanvas = () => {
   // This flag controls open state, alternates between true & false
   const [open, setOpen] = useState(true);
+  const { setLaptopState } = useContext(GlobalContext);
   // We turn this into a spring animation that interpolates between 0 and 1
   const props = useSpring({ open: Number(open) });
   const [isMobile, setIsMobile] = useState(false);
@@ -119,7 +121,6 @@ const ComputerCanvas = () => {
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-      console.log("mobile");
     };
 
     // Add the callback function as a listener for changes to the media query
@@ -152,6 +153,7 @@ const ComputerCanvas = () => {
           onClick={(e) => {
             e.stopPropagation();
             setOpen(!open);
+            setLaptopState(!open);
           }}
         >
           <Computers open={open} hinge={props.open.to([0, 1], [1.575, -0.4])} />

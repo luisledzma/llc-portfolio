@@ -27,11 +27,7 @@ const Footer = (): JSX.Element => {
     <footer className="rounded-lg shadow m-4 ">
       <div className="w-full mx-auto max-w-screen-xl md:flex md:items-center md:justify-center">
         <span className="text-sm text-gray-500 sm:text-center dark:text-white">
-          © 2024{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
-            LLCode™
-          </a>
-          . All Rights Reserved.
+          © 2024 LLCode™ . All Rights Reserved.
         </span>
       </div>
     </footer>

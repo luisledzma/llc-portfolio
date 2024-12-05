@@ -49,7 +49,7 @@ const App = (): JSX.Element => {
           {/* <StarsCanvas></StarsCanvas> */}
         </div>
 
-        <Stars></Stars>
+        {/* <Stars></Stars> */}
       </div>
     </BrowserRouter>
   );

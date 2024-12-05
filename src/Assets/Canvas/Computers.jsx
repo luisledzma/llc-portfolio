@@ -136,10 +136,10 @@ const ComputerCanvas = () => {
       position={[0, 0, 0]}
       camera={
         isMobile
-          ? { position: [0, 0, -35], fov: 35 }
+          ? { position: [0, 0, -30], fov: 35 }
           : { position: [0, 0, -30], fov: 35 }
       }
-      style={isMobile ? { height: "80vh", top: "17vh" } : { top: "5vh" }} // Update position here
+      style={isMobile ? { height: "80vh", top: "15vh" } : { top: "5vh" }} // Update position here
     >
       <three.pointLight
         position={[10, 10, 10]}

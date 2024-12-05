@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Laptop, planet } from "../../Assets";
+import { Laptop } from "../../Assets";
 import { TypedEffect } from "../../Utils";
+import CodeSnippet from "../CodeSnippet/CodeSnippet";
 // export type HeroProps = {};
 
 const Hero = (): JSX.Element => {
@@ -31,11 +32,11 @@ const Hero = (): JSX.Element => {
           "sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5"
         }
       >
-        <div className="flex flex-col justify-center items-center mt-5">
+        {/* <div className="flex flex-col justify-center items-center mt-5 sm:hidden">
           <div className="w-[100px] h-[100px]">
             <img src={planet} alt="planet" />
           </div>
-        </div>
+        </div> */}
         <div>
           <h1
             className={
@@ -64,7 +65,12 @@ const Hero = (): JSX.Element => {
             <p className="mt-0.5 sm:block">
               {"// Writing clean, scalable code 🖥️"}
             </p>
-            <p className="mt-2 break-all">
+            <CodeSnippet
+              text="resume"
+              link="google"
+              isEmail={false}
+            ></CodeSnippet>
+            {/* <p className="mt-2 break-all">
               <span className="text-[#9160A6]">const </span>{" "}
               <span className="text-[#66BCF2]">resume </span>
               <span className="text-[#66BCF2]"> = </span>
@@ -77,12 +83,12 @@ const Hero = (): JSX.Element => {
                 `https://www.linkedin.com/in/luisledzma/`
               </a>
               <span>;</span>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
       <Laptop />
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-21 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

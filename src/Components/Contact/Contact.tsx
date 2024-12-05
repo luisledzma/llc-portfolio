@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper, textVariant } from "../../Utils";
+import CodeSnippet from "../CodeSnippet/CodeSnippet";
 
 // export type ContactProps = {};
 
@@ -34,43 +35,21 @@ const Contact = (): JSX.Element => {
       </h2>
       <div className="flex flex-col justify-center min-h-max sm:mt-[5vh] text-[#80858C]">
         <p className="mt-0.5 sm:block">{"// I'm located in Costa Rica"}</p>
-        <p className="mt-2 break-all">
-          <span className="text-[#9160A6]">const </span>{" "}
-          <span className="text-[#66BCF2]">gitHub </span>
-          <span className="text-[#66BCF2]"> = </span>
-          <a
-            className="text-[#9CBF78]"
-            href="https://github.com/luisledzma"
-            target="_blank"
-            rel="noreferrer"
-          >
-            `https://github.com/luisledzma`
-          </a>
-          <span>;</span>
-        </p>
-        <p className="mt-2 break-all">
-          <span className="text-[#9160A6]">const </span>{" "}
-          <span className="text-[#66BCF2]">linkedIn </span>
-          <span className="text-[#66BCF2]"> = </span>
-          <a
-            className="text-[#9CBF78]"
-            href="https://www.linkedin.com/in/luisledzma/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            `https://www.linkedin.com/in/luisledzma/`
-          </a>
-          <span>;</span>
-        </p>
-        <p className="mt-2 break-all">
-          <span className="text-[#9160A6]">const </span>{" "}
-          <span className="text-[#66BCF2]">email </span>
-          <span className="text-[#66BCF2]"> = </span>
-          <a className="text-[#9CBF78]" href="mailto:luisledzma@outlook.com">
-            `luisledzma@outlook.com`
-          </a>
-          <span>;</span>
-        </p>
+        <CodeSnippet
+          text="gitHub"
+          link="https://github.com/luisledzma"
+          isEmail={false}
+        ></CodeSnippet>
+        <CodeSnippet
+          text="linkedIn"
+          link="https://www.linkedin.com/in/luisledzma/"
+          isEmail={false}
+        ></CodeSnippet>
+        <CodeSnippet
+          text="email"
+          link="luisledzma@outlook.com"
+          isEmail={true}
+        ></CodeSnippet>
       </div>
     </motion.div>
   );

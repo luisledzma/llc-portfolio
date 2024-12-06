@@ -48,7 +48,13 @@ const Hero = ({ isLaptopOpen }: HeroProps): JSX.Element => {
             Hi, I&apos;m <span className="text-primary-3">Luis </span>
           </h1>
           <TypedEffect
-            strings={["> React enthusiast", "> Next.js expert"]}
+            strings={[
+              "> React enthusiast",
+              "> Backend strategist",
+              "> Cloud innovator",
+              "> Problem solver at heart",
+              "> Passionate about coding",
+            ]}
             typeSpeed={80}
             backSpeed={80}
             loop
@@ -74,21 +80,6 @@ const Hero = ({ isLaptopOpen }: HeroProps): JSX.Element => {
                 isEmail={false}
               ></CodeSnippet>
             </div>
-
-            {/* <p className="mt-2 break-all">
-              <span className="text-[#9160A6]">const </span>{" "}
-              <span className="text-[#66BCF2]">resume </span>
-              <span className="text-[#66BCF2]"> = </span>
-              <a
-                className="text-[#9CBF78]"
-                href="https://www.linkedin.com/in/luisledzma/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                `https://www.linkedin.com/in/luisledzma/`
-              </a>
-              <span>;</span>
-            </p> */}
           </div>
         </div>
       </div>

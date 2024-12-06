@@ -35,7 +35,7 @@ const Navbar = (): JSX.Element => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/"
+          to={`${process.env.PUBLIC_URL}/`}
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/llc-portfolio/static/css/main.d463df94.css",
-    "main.js": "/llc-portfolio/static/js/main.e39b9592.js",
+    "main.js": "/llc-portfolio/static/js/main.995bd97d.js",
     "static/js/206.6e20cc51.chunk.js": "/llc-portfolio/static/js/206.6e20cc51.chunk.js",
     "static/media/planet.svg": "/llc-portfolio/static/media/planet.7df22fe18787e88c1744646b6d9e7717.svg",
     "static/media/dotNet.svg": "/llc-portfolio/static/media/dotNet.6de4550dd6db6911369b336be6afe928.svg",
@@ -42,6 +42,6 @@
   },
   "entrypoints": [
     "static/css/main.d463df94.css",
-    "static/js/main.e39b9592.js"
+    "static/js/main.995bd97d.js"
   ]
 }

@@ -77,7 +77,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Mar 2024 - Present",
     points: [
-      "Co-led front-end development for Intel Foundry Services (IFS), designing and implementing scalable web components using React and TypeScript. Migrated 4+ legacy applications from a monolithic portal to a Microfrontend architecture, enhancing user experience and reducing long-term maintenance costs across the software lifecycle.",
+      "Co-led front-end development for Intel Foundry Services (IFS), migrating 4+ legacy apps to a scalable Microfrontend architecture using React and TypeScript—improving UX and reducing maintenance costs.",
       "Provided technical mentorship through code reviews and architectural guidance, helping reduce front-end defects by 30% and accelerating feature delivery by 20% across the team.",
     ],
   },
@@ -88,10 +88,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jul 2022 - Feb 2024",
     points: [
-      "Designed, implemented, and deployed critical microservices using Node.js, TypeScript, and PostgreSQL to significantly enhance the scalability and reliability of Wind River’s core SaaS platform. Achieved a 30% improvement in system scalability, reducing latency. Collaborated with cross-functional teams to ensure seamless integration.",
+      "Built and deployed microservices using Node.js, TypeScript, and PostgreSQL, boosting platform scalability by 30% and reducing latency. Collaborated cross-functionally to ensure seamless integration.",
       "Led front-end feature development using Angular for Wind River’s core SaaS platform, driving the creation of scalable and reusable UI components. Provided technical leadership and guided developers on best practices to ensure the successful delivery of high-quality features.",
-      "Migrated cloud infrastructure provisioning and deployment from the AWS CLI to Terraform and blueprints, eliminating the dependency on the CLI that caused performance issues. This transition enabled Wind River’s core SaaS platform to configure and manage resources like EC2 instances, auto-scaling groups, and Kubernetes services in AWS and Azure, resulting in a 30% improvement in deployment speed and resource efficiency.",
-      "Collaborated with product owners and stakeholders to gather technical and business requirements, analyze epics, and break them down into actionable user stories and tasks. This process improved backlog clarity and sprint planning efficiency, accelerating team velocity by 20%.",
+      "Migrated cloud provisioning from AWS CLI to Terraform and blueprints, improving deployment speed and resource efficiency by 30% across AWS and Azure.",
+      "Streamlined sprint planning by translating business needs into clear user stories and tasks, improving backlog clarity and increasing team velocity by 20%.",
     ],
   },
 
@@ -107,7 +107,7 @@ const experiences = [
       "Provided full production support within the Advance Industrial Systems organization, ensuring 99.9% uptime through proactive monitoring, rapid issue resolution, and continuous system health checks.",
       "Mentored new team members, helping them ramp up quickly through pair programming and knowledge-sharing sessions; led code reviews to uphold high standards and improve overall team code quality.",
       "Led integrations of 3rd-party tools across multiple teams, with the most impactful being the replacement of a licensed system by integrating an open-source math solver—boosting performance and delivering cost savings of over $2M.",
-      "Supported requirements gathering efforts for new features by collaborating with senior engineers and product owners. Participated in analyzing epics and translating them into user stories, contributing to clearer sprint planning and gaining hands-on experience with Agile workflows.",
+      "Collaborated with senior engineers and product owners to refine epics into user stories, improving sprint planning and deepening Agile workflow experience.",
     ],
   },
 ];

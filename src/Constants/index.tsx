@@ -77,8 +77,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Mar 2024 - Present",
     points: [
-      "Develop, design, and test web components and APIs based on business requirements using .Net Core, C# and React.",
-      "Coaching team members and lead team.",
+      "Co-led front-end development for Intel Foundry Services (IFS), designing and implementing scalable web components using React and TypeScript. Migrated 4+ legacy applications from a monolithic portal to a Microfrontend architecture, enhancing user experience and reducing long-term maintenance costs across the software lifecycle.",
+      "Provided technical mentorship through code reviews and architectural guidance, helping reduce front-end defects by 30% and accelerating feature delivery by 20% across the team.",
     ],
   },
   {
@@ -88,10 +88,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jul 2022 - Feb 2024",
     points: [
-      "Leading development efforts for the innovative Wind River Studio project, dedicated to providing a cloud-native toolset for mission-critical systems. My contributions span the entire software development lifecycle.",
-      "Designing and building small software pieces called microservices using Node.js and Kubernetes to make sure the project is scalable.",
-      "Prioritizing security by hardening Docker images to fortify our application against potential vulnerabilities.",
-      "Deploying resources in AWS and Azure using IaaC with technologies like terraform and blueprints.",
+      "Designed, implemented, and deployed critical microservices using Node.js, TypeScript, and PostgreSQL to significantly enhance the scalability and reliability of Wind River’s core SaaS platform. Achieved a 30% improvement in system scalability, reducing latency. Collaborated with cross-functional teams to ensure seamless integration.",
+      "Led front-end feature development using Angular for Wind River’s core SaaS platform, driving the creation of scalable and reusable UI components. Provided technical leadership and guided developers on best practices to ensure the successful delivery of high-quality features.",
+      "Migrated cloud infrastructure provisioning and deployment from the AWS CLI to Terraform and blueprints, eliminating the dependency on the CLI that caused performance issues. This transition enabled Wind River’s core SaaS platform to configure and manage resources like EC2 instances, auto-scaling groups, and Kubernetes services in AWS and Azure, resulting in a 30% improvement in deployment speed and resource efficiency.",
+      "Collaborated with product owners and stakeholders to gather technical and business requirements, analyze epics, and break them down into actionable user stories and tasks. This process improved backlog clarity and sprint planning efficiency, accelerating team velocity by 20%.",
     ],
   },
 
@@ -102,13 +102,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2019 - Jul 2022",
     points: [
-      "Worked on a linear programming project, eliminating 3rd party dependencies and introducing an open-source solver solution, resulting in annual savings exceeding $1 million in licensing costs and boosting business performance.",
-      "Developed, designed, and thoroughly tested APIs using a microservices architecture, with a focus on .Net Core and C#.",
-      "Created various web application components and introduced new features by leveraging technologies such as ReactJs and Angular.",
-      "Assumed responsibility for designing, developing, enhancing, and testing database queries, views, and stored procedures to ensure efficient data handling.",
-      "Exposed APIs through Apigee to facilitate integration with external organizations seeking to incorporate the team’s applications.",
-      "Implemented Continuous Integration/Continuous Deployment (CI/CD) pipelines and successfully deployed applications to production using GitLab and GitHub actions.",
-      "Played a pivotal role in mentoring and coaching new team members, offering guidance through code reviews and engaging in pair programming sessions.",
+      "Designed, developed, and deployed over 4 production-ready Tier 1 applications for Intel’s Advance Industrial Systems group, building microservices and APIs using C#, .NET Core, Apigee, and DBaaS; containerized and orchestrated via Docker and Kubernetes.",
+      "Contributed to front-end development using React, Angular and MAUI across 3+ applications, emphasizing reusability and user experience; provided guidance to developers on best practices and accessibility standards.",
+      "Provided full production support within the Advance Industrial Systems organization, ensuring 99.9% uptime through proactive monitoring, rapid issue resolution, and continuous system health checks.",
+      "Mentored new team members, helping them ramp up quickly through pair programming and knowledge-sharing sessions; led code reviews to uphold high standards and improve overall team code quality.",
+      "Led integrations of 3rd-party tools across multiple teams, with the most impactful being the replacement of a licensed system by integrating an open-source math solver—boosting performance and delivering cost savings of over $2M.",
+      "Supported requirements gathering efforts for new features by collaborating with senior engineers and product owners. Participated in analyzing epics and translating them into user stories, contributing to clearer sprint planning and gaining hands-on experience with Agile workflows.",
     ],
   },
 ];

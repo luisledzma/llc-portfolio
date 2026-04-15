@@ -1,7 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-/* eslint-disable-next-line no-sequences */
 import { useSpring } from "@react-spring/core";
 import { a as three } from "@react-spring/three";
 import {
@@ -137,11 +134,7 @@ const ComputerCanvas = () => {
     <Canvas
       dpr={[1, 2]}
       position={[0, 0, 0]}
-      camera={
-        isMobile
-          ? { position: [0, 0, -30], fov: 35 }
-          : { position: [0, 0, -30], fov: 35 }
-      }
+      camera={{ position: [0, 0, -30], fov: 35 }}
       style={isMobile ? { height: "80vh", top: "15vh" } : { top: "5vh" }} // Update position here
     >
       <three.pointLight

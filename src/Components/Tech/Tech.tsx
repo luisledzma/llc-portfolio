@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import {
+  Skill,
   backend_skills,
   frontend_skills,
   fullStack_skills,
@@ -7,29 +8,7 @@ import {
 import { SectionWrapper, textVariant } from "../../Utils";
 import SkillsRow from "./SkillsRow/SkillsRow";
 
-// export type TechProps = {};
-
 const Tech = (): JSX.Element => {
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // useState, useRef, useContext, etc.
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // useEffect
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Misc Methods
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Callback methods
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Component's render method
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -51,12 +30,10 @@ const Tech = (): JSX.Element => {
       <section
         id="skills"
         className="flex flex-col items-center justify-center gap-3 h-full relative overflow-visible"
-        style={{
-          transform: "scale(0.9",
-        }}
+        style={{ transform: "scale(0.9)" }}
       >
         <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-          {backend_skills.map((image: any, index: any) => (
+          {backend_skills.map((image: Skill, index: number) => (
             <SkillsRow
               key={index}
               src={image.Image}
@@ -68,7 +45,7 @@ const Tech = (): JSX.Element => {
           ))}
         </div>
         <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-          {frontend_skills.map((image: any, index: any) => (
+          {frontend_skills.map((image: Skill, index: number) => (
             <SkillsRow
               key={index}
               src={image.Image}
@@ -80,7 +57,7 @@ const Tech = (): JSX.Element => {
           ))}
         </div>
         <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-          {fullStack_skills.map((image: any, index: any) => (
+          {fullStack_skills.map((image: Skill, index: number) => (
             <SkillsRow
               key={index}
               src={image.Image}

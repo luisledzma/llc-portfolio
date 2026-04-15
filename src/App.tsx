@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { GlobalContext } from "./Common/GlobalContext";
 import {
@@ -11,54 +11,29 @@ import {
   Tech,
 } from "./Components";
 import { GlobalContextModel } from "./Models/GlobalContextModel";
-const App = (): JSX.Element => {
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // useState, useRef, useContext, etc.
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  const [globalContext, setGlobalContext] = useState<GlobalContextModel>({
-    setLaptopState(open) {
-      setLaptopState(open);
-    },
-  });
-  const [openLaptop, setOpenLaptop] = useState<boolean>(true);
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // useEffect
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  useEffect(() => {
-    const clone = JSON.parse(
-      JSON.stringify(globalContext)
-    ) as GlobalContextModel;
-    clone.setLaptopState = setOpenLaptop;
-    setGlobalContext(clone);
-  }, []);
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Misc Methods
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  const setLaptopState = (open: boolean): void => {
-    setOpenLaptop(open);
-  };
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Callback methods
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Component's render method
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const App = (): JSX.Element => {
+  const [openLaptop, setOpenLaptop] = useState<boolean>(true);
+
+  const contextValue = useMemo<GlobalContextModel>(
+    () => ({ setLaptopState: setOpenLaptop }),
+    []
+  );
 
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-background-dark1">
-        <GlobalContext.Provider value={globalContext}>
-          <Navbar></Navbar>
-          <Hero isLaptopOpen={openLaptop}></Hero>
-          <About></About>
-          <Experience></Experience>
+        <GlobalContext.Provider value={contextValue}>
+          <Navbar />
+          <Hero isLaptopOpen={openLaptop} />
+          <About />
+          <Experience />
           <div className="bg-tech-pattern bg-cover bg-no-repeat bg-center z-10">
-            <Tech></Tech>
+            <Tech />
           </div>
           <div className="relative z-0">
-            <Contact></Contact>
-            <Footer></Footer>
+            <Contact />
+            <Footer />
           </div>
         </GlobalContext.Provider>
       </div>

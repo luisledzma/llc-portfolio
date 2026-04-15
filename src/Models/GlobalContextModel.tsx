@@ -1,3 +1,3 @@
-export class GlobalContextModel {
-  setLaptopState = (open: boolean) => {};
+export interface GlobalContextModel {
+  setLaptopState: (open: boolean) => void;
 }

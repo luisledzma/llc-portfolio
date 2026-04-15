@@ -34,6 +34,7 @@ import sass from "./Images/Technologies/sass.svg";
 import tailwind from "./Images/Technologies/tailwind.svg";
 import terraform from "./Images/Technologies/terraform.svg";
 import ts from "./Images/Technologies/ts.svg";
+import swift from "./Images/Technologies/swift.svg";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Images.
@@ -87,4 +88,5 @@ export {
   terraform,
   ts,
   wr,
+  swift,
 };

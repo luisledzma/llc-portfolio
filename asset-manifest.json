@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/llc-portfolio/static/css/main.d463df94.css",
-    "main.js": "/llc-portfolio/static/js/main.85d4a95d.js",
+    "main.css": "/llc-portfolio/static/css/main.e21123a9.css",
+    "main.js": "/llc-portfolio/static/js/main.2e066aba.js",
     "static/js/206.6e20cc51.chunk.js": "/llc-portfolio/static/js/206.6e20cc51.chunk.js",
     "static/media/planet.svg": "/llc-portfolio/static/media/planet.7df22fe18787e88c1744646b6d9e7717.svg",
     "static/media/dotNet.svg": "/llc-portfolio/static/media/dotNet.6de4550dd6db6911369b336be6afe928.svg",
@@ -33,6 +33,7 @@
     "static/media/azure.svg": "/llc-portfolio/static/media/azure.1d61f263f8c47bcccfc6982ed4c70e67.svg",
     "static/media/nextjs.svg": "/llc-portfolio/static/media/nextjs.f5957d7d1ef0e72ebd288131fc64a1e6.svg",
     "static/media/close.svg": "/llc-portfolio/static/media/close.8de6460f269d97bdef87c899c2b54e45.svg",
+    "static/media/swift.svg": "/llc-portfolio/static/media/swift.4392ee586d1cb8ea705db211b1dfca1b.svg",
     "static/media/css.svg": "/llc-portfolio/static/media/css.88a9893bf7a52d78f6f1b9ef87a6f0a0.svg",
     "static/media/angular.svg": "/llc-portfolio/static/media/angular.731e1535babc4225f9deaa9108718461.svg",
     "static/media/html5.svg": "/llc-portfolio/static/media/html5.91afbd10a92d040f2824deee88e93b2f.svg",
@@ -41,7 +42,7 @@
     "index.html": "/llc-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.d463df94.css",
-    "static/js/main.85d4a95d.js"
+    "static/css/main.e21123a9.css",
+    "static/js/main.2e066aba.js"
   ]
 }
